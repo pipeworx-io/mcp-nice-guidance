@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/nice-guidance",
   "title": "Nice Guidance",
   "description": "NICE guidance MCP — the National Institute for Health and Care Excellence's",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/nice-guidance",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-nice-guidance",
