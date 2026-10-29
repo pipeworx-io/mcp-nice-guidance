@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-nice-guidance",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "NICE guidance MCP — the National Institute for Health and Care Excellence's published guidance for England: technology appraisals (does the NHS fund this medicine), clinical and NICE guidelines, diagnostics, interventional procedures and quality standards.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-nice-guidance": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "nice-guidance"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-nice-guidance.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/nice-guidance",
   "pipeworx": {
-    "sourceHash": "v1-07c0614a0bccb7b74d9852024a07fc34be98e3b95797aecf727382d9c5d9f722",
-    "sourceCommit": "774de7f685a75e02d0b828d24a7b94794102152c"
+    "mode": "gateway",
+    "slug": "nice-guidance",
+    "gatewaySlug": "nice-guidance",
+    "sourceHash": "v1-8f46d9057d82202cac184429bd56d9cca7a94a12f7c6723416213cde1abb0c44",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }
